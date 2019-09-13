@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+
+  web:
+    image: 0123456789.dkr.ecr.ap-northeast-1.amazonaws.com/sample:latest
+    container_name: sample
+    build:
+      context: .
+    ports:
+      - "80:5000"
